@@ -32,6 +32,9 @@ export default function Carousels(){
     {
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/2022_Hyundai_Creta_1.6_Plus_%28Chile%29_front_view.jpg/1920px-2022_Hyundai_Creta_1.6_Plus_%28Chile%29_front_view.jpg",
     },
+    {
+      img: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Tesla/Tesla-Model-3/5100/1558500541732/front-left-side-47.jpg",
+    },
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -78,7 +81,7 @@ export default function Carousels(){
               <Image
                 src={slide.img}
                 alt="carousel image"
-                boxSize="container.lg"
+                boxSize="container.md"
                 backgroundSize="cover"
                height={"400px"}
 
@@ -97,7 +100,7 @@ export default function Carousels(){
             <Box
               key={`dots-${slide}`}
               cursor="pointer"
-              boxSize={["50px", null, "15px"]}
+              boxSize={["20px", null, "15px"]}
               m="0 2px"
               bg={currentSlide === slide ? "blackAlpha.800" : "blackAlpha.500"}
               rounded="50%"
