@@ -29,6 +29,9 @@ export default function Carousels(){
     {
       img: "https://imgd.aeplcdn.com/664x374/n/cw/ec/110233/2022-camry-exterior-right-front-three-quarter.jpeg?isig=0&q=75",
     },
+    {
+      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/2022_Hyundai_Creta_1.6_Plus_%28Chile%29_front_view.jpg/1920px-2022_Hyundai_Creta_1.6_Plus_%28Chile%29_front_view.jpg",
+    },
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
